@@ -160,9 +160,31 @@
 <style>
   /* Prevent body scroll when nav open on iOS */
   body.nav-open{overflow:hidden;}
+
+  /* Password gate overlay */
+  #pw-gate{position:fixed;inset:0;background:var(--deep-blue);z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px;}
+  #pw-box{background:white;border-radius:8px;padding:36px 32px;max-width:360px;width:100%;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.3);}
+  #pw-box h2{color:var(--deep-blue);font-size:20px;margin-bottom:4px;letter-spacing:1px;}
+  #pw-box p{color:var(--gray);font-size:13px;margin-bottom:20px;}
+  #pw-input{width:100%;padding:11px 14px;border:2px solid var(--border);border-radius:4px;font-size:15px;outline:none;text-align:center;letter-spacing:2px;}
+  #pw-input:focus{border-color:var(--deep-blue);}
+  #pw-btn{margin-top:12px;width:100%;padding:12px;background:var(--gold);color:white;border:none;border-radius:4px;font-size:15px;font-weight:bold;cursor:pointer;letter-spacing:1px;}
+  #pw-btn:hover{background:#9a7009;}
+  #pw-err{color:#c0392b;font-size:13px;margin-top:10px;min-height:18px;}
 </style>
 </head>
 <body>
+<!-- Password gate -->
+<div id="pw-gate">
+  <div id="pw-box">
+    <h2>MEN OF JUDAH</h2>
+    <p>This document is confidential.<br>Enter the password to continue.</p>
+    <input id="pw-input" type="password" placeholder="Password" autocomplete="off" />
+    <button id="pw-btn">ENTER</button>
+    <div id="pw-err"></div>
+  </div>
+</div>
+
 <!-- Hamburger button (mobile only) -->
 <button class="ham" id="hamBtn" aria-label="Open navigation" aria-expanded="false" aria-controls="sideNav">
   <span></span><span></span><span></span>
@@ -328,6 +350,34 @@
   </div>
 </main>
 <script>
+  // ── Password gate ──
+  (function(){
+    var gate = document.getElementById('pw-gate');
+    var input = document.getElementById('pw-input');
+    var btn = document.getElementById('pw-btn');
+    var err = document.getElementById('pw-err');
+    var PASS = 'epicenter';
+
+    // Hide page content until unlocked
+    document.body.style.overflow = 'hidden';
+
+    function unlock(){
+      if(input.value.trim().toLowerCase() === PASS){
+        gate.style.display = 'none';
+        document.body.style.overflow = '';
+      } else {
+        err.textContent = 'Incorrect password. Please try again.';
+        input.value = '';
+        input.focus();
+      }
+    }
+
+    btn.addEventListener('click', unlock);
+    input.addEventListener('keydown', function(e){ if(e.key === 'Enter') unlock(); });
+    input.focus();
+  })();
+
+  // ── Nav ──
   (function(){
     var btn = document.getElementById('hamBtn');
     var nav = document.getElementById('sideNav');
