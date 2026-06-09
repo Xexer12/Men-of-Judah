@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Men of Judah — Leadership Overview</title>
+<style>
+  :root {
+    --deep-blue:#1A3557;--gold:#B8860B;--gold-light:#FDF3D0;--gold-mid:#E8C84A;
+    --blue-light:#E8F0F8;--charcoal:#2C2C2C;--light-bg:#F5F0E8;--white:#FFFFFF;
+    --gray:#666666;--border:#DDDDDD;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Arial,Helvetica,sans-serif;color:var(--charcoal);background:#F8F6F2;font-size:15px;line-height:1.6;}
+  nav{position:fixed;top:0;left:0;width:210px;height:100vh;background:var(--deep-blue);color:white;overflow-y:auto;z-index:100;padding:0 0 40px 0;}
+  .nav-logo{background:rgba(0,0,0,0.3);padding:18px 14px 12px;border-bottom:2px solid var(--gold);}
+  .nav-logo h2{font-size:14px;letter-spacing:2px;color:white;margin-bottom:2px;}
+  .nav-logo p{font-size:10px;color:var(--gold-mid);letter-spacing:1px;}
+  nav ul{list-style:none;padding:8px 0;}
+  nav ul li a{display:block;padding:7px 14px;color:rgba(255,255,255,0.78);text-decoration:none;font-size:12px;border-left:3px solid transparent;transition:all 0.15s;}
+  nav ul li a:hover{color:white;background:rgba(255,255,255,0.08);border-left-color:var(--gold);}
+  nav ul li.sh a{font-weight:bold;color:white;font-size:12px;padding-top:12px;}
+  nav ul li.sub a{padding-left:28px;font-size:11px;}
+  .nav-footer{padding:14px;font-size:10px;color:rgba(255,255,255,0.4);border-top:1px solid rgba(255,255,255,0.1);margin-top:8px;}
+  main{margin-left:210px;padding:0 40px 80px 46px;max-width:940px;}
+  .hero{background:var(--deep-blue);color:white;margin:0 -40px 0 -46px;padding:50px 46px 38px;border-bottom:4px solid var(--gold);}
+  .hero-ey{font-size:11px;letter-spacing:3px;color:var(--gold-mid);text-transform:uppercase;margin-bottom:8px;}
+  .hero h1{font-size:52px;letter-spacing:3px;font-weight:900;color:white;margin-bottom:6px;line-height:1.1;}
+  .hero-sub{font-size:17px;color:rgba(255,255,255,0.75);margin-bottom:20px;font-style:italic;}
+  .hero-meta{font-size:12px;color:rgba(255,255,255,0.5);}
+  .hero-sc{margin-top:26px;background:rgba(255,255,255,0.07);border-left:4px solid var(--gold);padding:14px 18px;border-radius:0 4px 4px 0;}
+  .hero-sc blockquote{font-style:italic;font-size:15px;color:rgba(255,255,255,0.9);margin-bottom:5px;}
+  .hero-sc cite{font-size:11px;color:var(--gold-mid);font-style:normal;font-weight:bold;}
+  section{margin-top:44px;scroll-margin-top:20px;}
+  h2.st{font-size:21px;color:var(--deep-blue);border-bottom:3px solid var(--gold);padding-bottom:9px;margin-bottom:18px;font-weight:700;}
+  h3.sub{font-size:15px;color:var(--deep-blue);font-weight:700;margin:22px 0 9px;}
+  p{margin-bottom:11px;}
+  .callout{background:var(--gold-light);border-left:4px solid var(--gold);padding:12px 16px;border-radius:0 4px 4px 0;margin:14px 0;font-size:13px;}
+  .callout.blue{background:var(--blue-light);border-color:var(--deep-blue);}
+  .callout.light{background:var(--light-bg);border-color:#999;}
+  .callout strong{color:var(--deep-blue);}
+  .dt{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px;}
+  .dt th{background:var(--deep-blue);color:white;padding:8px 11px;text-align:left;font-size:11px;}
+  .dt td{padding:7px 11px;border:1px solid var(--border);vertical-align:top;}
+  .dt tr:nth-child(even) td{background:var(--light-bg);}
+  .dt tr:nth-child(odd) td{background:white;}
+  .dt td:first-child{font-weight:bold;color:var(--deep-blue);background:var(--light-bg) !important;}
+  .ig{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0;}
+  .ic{background:white;border:1px solid var(--border);border-top:3px solid var(--gold);border-radius:4px;padding:14px;}
+  .ic h4{font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;}
+  .ic p{font-size:12px;color:var(--charcoal);margin:0;}
+  .tl{margin:14px 0;}
+  .tli{display:flex;gap:0;margin-bottom:2px;}
+  .tlp{min-width:130px;max-width:130px;background:var(--deep-blue);color:white;padding:9px 11px;font-size:11px;font-weight:bold;display:flex;align-items:center;}
+  .tlc{flex:1;background:white;border:1px solid var(--border);padding:9px 13px;font-size:13px;}
+  .tlc strong{color:var(--deep-blue);}
+  .mods{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:14px 0;}
+  .mod{background:white;border:1px solid var(--border);border-radius:4px;overflow:hidden;}
+  .mh{background:var(--deep-blue);color:white;padding:9px 13px;font-size:12px;font-weight:bold;}
+  .mh span{display:block;font-size:10px;color:var(--gold-mid);font-weight:normal;margin-top:2px;}
+  .mb{padding:11px 13px;font-size:12px;}
+  .mb ul{padding-left:16px;}
+  .mb li{margin-bottom:4px;}
+  .mo{background:var(--gold-light);border-top:1px solid var(--border);padding:7px 13px;font-size:11px;color:var(--deep-blue);font-weight:bold;}
+  .vals{display:grid;grid-template-columns:1fr 1fr 1fr;gap:11px;margin:14px 0;}
+  .vc{background:white;border:1px solid var(--border);border-radius:4px;padding:13px;}
+  .vc h4{font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;font-weight:bold;}
+  .vc p{font-size:11px;color:var(--gray);margin:0;}
+  .at{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px;}
+  .at th{background:var(--deep-blue);color:white;padding:8px 11px;text-align:left;font-size:11px;}
+  .at td{padding:9px 11px;border:1px solid var(--border);vertical-align:top;}
+  .at tr:nth-child(even) td{background:var(--light-bg);}
+  .at td.aw{font-weight:bold;color:var(--deep-blue);}
+  .at td.awt{color:var(--gold);font-weight:bold;font-size:11px;white-space:nowrap;}
+  .vs{margin:14px 0;}
+  .vi{display:flex;gap:13px;margin-bottom:9px;align-items:flex-start;}
+  .vn{min-width:30px;height:30px;background:var(--gold);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:13px;flex-shrink:0;}
+  .vb{font-size:13px;padding-top:4px;}
+  .vb strong{color:var(--deep-blue);}
+  .fdb{background:var(--deep-blue);color:white;padding:20px 22px;border-radius:4px;margin:28px 0 0;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:13px;}
+  .fdb strong{display:block;font-size:15px;margin-bottom:4px;}
+  .fdb-text{flex:1;}
+  .fdb-btns{display:flex;gap:10px;flex-shrink:0;flex-wrap:wrap;align-items:center;}
+  .fdb a{background:var(--gold);color:white;text-decoration:none;padding:10px 18px;border-radius:3px;font-weight:bold;font-size:13px;white-space:nowrap;}
+  .fdb a:hover{background:#9a7009;}
+  .pf{margin:56px -40px 0 -46px;background:var(--deep-blue);color:rgba(255,255,255,0.7);padding:26px 46px;font-size:11px;display:flex;justify-content:space-between;align-items:center;border-top:4px solid var(--gold);}
+  .pf .pft{font-size:17px;font-weight:bold;color:white;letter-spacing:2px;}
+  .pf .pfm{text-align:right;}
+  /* ── Scrollable tables on small screens ── */
+  .dt,.at{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .dt table,.at table{min-width:480px;}
+
+  /* ── Hamburger button (hidden on desktop) ── */
+  .ham{display:none;position:fixed;top:12px;right:14px;z-index:200;background:var(--deep-blue);border:none;border-radius:6px;padding:10px 12px;cursor:pointer;line-height:1;}
+  .ham span{display:block;width:22px;height:2px;background:white;margin:4px 0;transition:all 0.2s;}
+
+  /* ── Mobile nav overlay ── */
+  .nav-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:99;}
+
+  @media print{nav{display:none;}main{margin-left:0;padding:18px;}.hero{margin:0 -18px;padding:28px 18px;}.pf{margin:36px -18px 0;}}
+
+  @media(max-width:680px){
+    /* Show hamburger, hide sidebar by default */
+    .ham{display:block;}
+    nav{
+      transform:translateX(-100%);
+      transition:transform 0.25s ease;
+      width:240px;
+      z-index:150;
+      -webkit-overflow-scrolling:touch;
+    }
+    nav.open{transform:translateX(0);}
+    .nav-overlay.open{display:block;}
+
+    /* Main layout */
+    main{margin-left:0;padding:14px;padding-top:60px;
+      padding-bottom:calc(20px + env(safe-area-inset-bottom,0px));
+    }
+
+    /* Hero */
+    .hero{margin:0 -14px;padding:28px 14px;}
+    .hero h1{font-size:30px;letter-spacing:1px;}
+    .hero-sub{font-size:14px;}
+
+    /* Nav links — bigger touch targets */
+    nav ul li a{padding:11px 14px;font-size:13px;}
+    nav ul li.sub a{padding-left:28px;font-size:12px;}
+
+    /* Tables — wrap in scrollable container */
+    .dt,.at{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;display:block;}
+    .dt table,.at table,.dt,.at{min-width:unset;}
+    table.dt,table.at{min-width:480px;display:table;}
+    /* Allow native table scroll */
+    section table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;}
+
+    /* Grids → single column */
+    .ig{grid-template-columns:1fr;}
+    .mods{grid-template-columns:1fr;}
+    .vals{grid-template-columns:1fr;}
+
+    /* Timeline */
+    .tli{flex-direction:column;}
+    .tlp{min-width:unset;max-width:unset;width:100%;}
+
+    /* Info cards — larger text */
+    .ic p,.mb,.mb li,.vb,.callout{font-size:14px;}
+    .vc p,.ic h4,.vc h4{font-size:12px;}
+
+    /* CTA bar */
+    .fdb{flex-direction:column;gap:12px;text-align:center;}
+    .fdb-btns{margin-left:0;justify-content:center;}
+    .fdb a{padding:12px 20px;font-size:14px;}
+
+    /* Footer */
+    .pf{flex-direction:column;gap:10px;text-align:center;margin:36px -14px 0;
+      padding-bottom:calc(26px + env(safe-area-inset-bottom,0px));
+    }
+  }
+</style>
+<style>
+  /* Prevent body scroll when nav open on iOS */
+  body.nav-open{overflow:hidden;}
+</style>
+</head>
+<body>
+<!-- Hamburger button (mobile only) -->
+<button class="ham" id="hamBtn" aria-label="Open navigation" aria-expanded="false" aria-controls="sideNav">
+  <span></span><span></span><span></span>
+</button>
+<!-- Overlay to close nav on tap-outside -->
+<div class="nav-overlay" id="navOverlay"></div>
+<nav id="sideNav">
+  <div class="nav-logo"><h2>MEN OF JUDAH</h2><p>LEADERSHIP OVERVIEW</p></div>
+  <ul>
+    <li class="sh"><a href="#what">What Is It?</a></li>
+    <li class="sh"><a href="#problem">The Problem</a></li>
+    <li class="sh"><a href="#mission">Mission &amp; Values</a></li>
+    <li class="sh"><a href="#structure">Program Structure</a></li>
+    <li class="sub"><a href="#cohort-model">Cohort Model</a></li>
+    <li class="sub"><a href="#weekly">Weekly Rhythm</a></li>
+    <li class="sh"><a href="#curriculum">Curriculum</a></li>
+    <li class="sh"><a href="#ask">What We Need</a></li>
+    <li class="sh"><a href="#vision">Long-Term Vision</a></li>
+  </ul>
+  <div class="nav-footer">Men of Judah &copy; 2026<br>Epicenter of Worship<br>Lansing, Michigan</div>
+</nav>
+<main>
+  <div class="hero">
+    <div class="hero-ey">Epicenter of Worship &bull; Lansing, Michigan</div>
+    <h1>MEN OF JUDAH</h1>
+    <div class="hero-sub">A Men&rsquo;s Entrepreneurship &amp; Leadership Ministry</div>
+    <div class="hero-meta">Launching Summer 2026 &bull; Version 1.0 &bull; June 2026</div>
+    <div class="hero-sc">
+      <blockquote>&ldquo;Be watchful, stand firm in the faith, act like men, be strong. Let all that you do be done in love.&rdquo;</blockquote>
+      <cite>1 Corinthians 16:13&ndash;14 (ESV) &mdash; Organizational Scripture</cite>
+    </div>
+  </div>
+
+  <section id="what">
+    <h2 class="st">What Is Men of Judah?</h2>
+    <div class="callout blue">Men of Judah is a structured men&rsquo;s ministry that equips young men at Epicenter of Worship with <strong>biblical wisdom and real entrepreneurial skills</strong> &mdash; producing prayer warriors, business owners, and Kingdom leaders.</div>
+    <p>We run in 6-month cohorts every Monday evening. Every cohort ends with each member having an <strong>active LLC and a 90-day business plan</strong>. We build brotherhood through accountability partnerships, expert guest speakers, and a shared commitment to generational wealth.</p>
+    <div class="ig">
+      <div class="ic"><h4>Who We Serve</h4><p>Young men (teens through young adults) at Epicenter of Worship. Expansion to full male congregation over time.</p></div>
+      <div class="ic"><h4>When We Meet</h4><p>Every Monday evening &mdash; 90-minute structured sessions. Consistent, recurring, non-negotiable.</p></div>
+      <div class="ic"><h4>The Name</h4><p>Judah = praise. The tribe of warriors, kings, and Jesus&rsquo; lineage. We carry that identity into the marketplace.</p></div>
+      <div class="ic"><h4>The Standard</h4><p>Every graduate: a filed LLC, business bank account, 90-day plan, and a brotherhood of men who know his name.</p></div>
+    </div>
+  </section>
+
+  <section id="problem">
+    <h2 class="st">The Problem We&rsquo;re Solving</h2>
+    <table class="dt">
+      <tbody>
+        <tr><td>Men are leaving the church</td><td>Men disengage from faith communities at higher rates than women. We give them a reason to show up &mdash; and stay.</td></tr>
+        <tr><td>Financial illiteracy is a crisis</td><td>Most men in our congregation have no LLC, no investment account, no will, no trust &mdash; and no one teaching them why they need these.</td></tr>
+        <tr><td>The wealth gap is spiritual too</td><td>Generational poverty is not just an economic issue. It is a discipleship gap. We close it with both Scripture and strategy.</td></tr>
+        <tr><td>Young men need models</td><td>The most powerful thing we can offer a young man is a room full of men building something real, in God&rsquo;s name.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="mission">
+    <h2 class="st">Mission &amp; Core Values</h2>
+    <div class="callout"><strong>MISSION:</strong> Men of Judah exists to activate young men in the church, equip them with biblical wisdom and entrepreneurial skills, and send them into the marketplace as leaders, wealth builders, and Kingdom ambassadors &mdash; beginning at Epicenter of Worship and expanding across Lansing and beyond.</div>
+    <h3 class="sub">Community Agreements</h3>
+    <div class="vals">
+      <div class="vc"><h4>Biblical Integrity</h4><p>Scripture first in every decision. We don&rsquo;t compromise for profit.</p></div>
+      <div class="vc"><h4>Radical Accountability</h4><p>We hold each other to our word, our plans, and our progress.</p></div>
+      <div class="vc"><h4>Collaborative Wealth</h4><p>Your win is our win. We don&rsquo;t compete; we compound.</p></div>
+      <div class="vc"><h4>Excellence Over Excuses</h4><p>We show up prepared, on time, and ready to build.</p></div>
+      <div class="vc"><h4>Generational Legacy</h4><p>Everything we build is a pass to the next generation.</p></div>
+      <div class="vc"><h4>Respect &amp; Brotherhood</h4><p>Disagreement is iron sharpening iron, never personal.</p></div>
+    </div>
+  </section>
+
+  <section id="structure">
+    <h2 class="st">Program Structure</h2>
+    <h3 class="sub" id="cohort-model">The Cohort Model</h3>
+    <div class="tl">
+      <div class="tli"><div class="tlp">Trial Sprint<br><small style="font-weight:normal;font-size:9px;">Now &ndash; July 2026</small></div><div class="tlc"><strong>Prove the model.</strong> 6 sessions to validate meeting flow and curriculum fit. Document adjustments for Cohort 1.</div></div>
+      <div class="tli"><div class="tlp">Cohort 1<br><small style="font-weight:normal;font-size:9px;">Aug &ndash; Dec 2026</small></div><div class="tlc"><strong>First full cohort.</strong> Every active member files an LLC by December. Graduation ceremony with 90-day plan presentations.</div></div>
+      <div class="tli"><div class="tlp">Cohort 2<br><small style="font-weight:normal;font-size:9px;">Jan &ndash; Jun 2027</small></div><div class="tlc"><strong>Refined program.</strong> Cohort 1 alumni serve as peer mentors. Teen track curriculum introduced.</div></div>
+      <div class="tli"><div class="tlp">City Launch<br><small style="font-weight:normal;font-size:9px;">Fall 2027+</small></div><div class="tlc"><strong>Take it citywide.</strong> Deploy to partner churches across Lansing using Cohort 1 success stories.</div></div>
+    </div>
+    <h3 class="sub" id="weekly">Weekly Monday Meeting (90 Minutes)</h3>
+    <table class="dt">
+      <thead><tr><th>Block</th><th>Time</th><th>Activity</th></tr></thead>
+      <tbody>
+        <tr><td>Opening</td><td>0:00&ndash;0:10</td><td>Scripture relevant to session theme, prayer, Win of the Week (each member shares one win)</td></tr>
+        <tr><td>Teaching</td><td>0:10&ndash;0:50</td><td>Core curriculum lesson or guest speaker (recorded for the media library)</td></tr>
+        <tr><td>Workshop</td><td>0:50&ndash;1:10</td><td>Hands-on: complete a form, draft a business plan section, or review assessments</td></tr>
+        <tr><td>Accountability</td><td>1:10&ndash;1:25</td><td>Each member reports on their weekly action item from last session</td></tr>
+        <tr><td>Close</td><td>1:25&ndash;1:30</td><td>Closing prayer, assign this week&rsquo;s action item, preview next session</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="curriculum">
+    <h2 class="st">Curriculum: Purpose to Profit</h2>
+    <p>Four modules over one 5-month cohort. Each module has a scriptural anchor, a real-world skill component, and a weekly action item.</p>
+    <div class="mods">
+      <div class="mod">
+        <div class="mh">Module 1 &mdash; August<span>Identity &amp; Purpose</span></div>
+        <div class="mb"><ul><li>DISC Assessment &amp; debrief</li><li>Spiritual Gifts Inventory</li><li>Purpose Assessment Worksheet</li><li>Biblical economics &amp; stewardship</li><li>Guest: Pastor-entrepreneur</li></ul></div>
+        <div class="mo">OUTCOME: Personal &ldquo;Why I&rsquo;m Building&rdquo; statement completed</div>
+      </div>
+      <div class="mod">
+        <div class="mh">Module 2 &mdash; September<span>Business Foundations</span></div>
+        <div class="mb"><ul><li>What is an LLC and why you need one</li><li>Michigan LLC filing walkthrough (live in-session)</li><li>Business banking: opening your account</li><li>Business structures: LLC vs. S-Corp</li><li>Guest: CPA or tax professional</li></ul></div>
+        <div class="mo">OUTCOME: LLC filed. Business bank account opened.</div>
+      </div>
+      <div class="mod">
+        <div class="mh">Module 3 &mdash; October<span>Wealth Mechanics</span></div>
+        <div class="mb"><ul><li>IUL strategy &mdash; using life insurance as your bank</li><li>Trusts: what they are and why you need one</li><li>Roth IRA and brokerage basics</li><li>Real estate 101: house hacking, wholesaling</li><li>Guest: Financial advisor &amp; real estate investor</li></ul></div>
+        <div class="mo">OUTCOME: Investment account opened or plan written.</div>
+      </div>
+      <div class="mod">
+        <div class="mh">Module 4 &mdash; Nov&ndash;Dec<span>AI, Tech &amp; Market Positioning</span></div>
+        <div class="mb"><ul><li>AI tools every entrepreneur needs right now</li><li>Building income streams with AI</li><li>Social media as a business development tool</li><li>Personal brand that attracts clients</li><li>Guest: Tech entrepreneur or content creator</li></ul></div>
+        <div class="mo">OUTCOME: GRADUATION &mdash; Present LLC + 90-day business plan</div>
+      </div>
+    </div>
+    <div class="callout"><strong>GRADUATION STANDARD:</strong> Every member who completes a cohort will have: a filed LLC, a business bank account, a written 90-day plan, and a brother in this room who knows their business by name.</div>
+  </section>
+
+  <section id="ask">
+    <h2 class="st">What We Need from Leadership</h2>
+    <p>To launch this summer, we are asking for the following pastoral support and resources:</p>
+    <table class="at">
+      <thead><tr><th>Request</th><th>Why It Matters</th><th>Timeline</th></tr></thead>
+      <tbody>
+        <tr><td class="aw">Recurring Monday meeting space</td><td>Consistency is non-negotiable. Members must know exactly where to show up every week.</td><td class="awt">End of June</td></tr>
+        <tr><td class="aw">Pastoral blessing &amp; endorsement</td><td>Young men follow where leaders lead. A 2-minute mention from the pulpit transforms recruiting.</td><td class="awt">Before Session 1</td></tr>
+        <tr><td class="aw">2&ndash;3 guest speaker referrals</td><td>We need a CPA, financial advisor, and pastor-entrepreneur for Cohort 1 guest nights.</td><td class="awt">By August</td></tr>
+        <tr><td class="aw">Permission to record sessions</td><td>First cohort recordings become the permanent curriculum library for all future cohorts.</td><td class="awt">Before August</td></tr>
+        <tr><td class="aw">Intro to church media team</td><td>We want to livestream Monday sessions and train members on production equipment.</td><td class="awt">Before Cohort 1</td></tr>
+      </tbody>
+    </table>
+    <div class="callout light"><strong>BUDGET NOTE:</strong> We are not asking for budget at this time. The program launches with existing church resources and volunteer leadership. Future funding will be tied to documented outcomes from Cohort 1.</div>
+  </section>
+
+  <section id="vision">
+    <h2 class="st">Long-Term Vision</h2>
+    <p>Men of Judah is designed to be more than a church group. It is a deployable program with a citywide mandate.</p>
+    <div class="vs">
+      <div class="vi"><div class="vn">1</div><div class="vb"><strong>Epicenter of Worship (2026)</strong> &mdash; Prove the model. Trial Sprint + Cohort 1. Document wins and refine the curriculum.</div></div>
+      <div class="vi"><div class="vn">2</div><div class="vb"><strong>Lansing Church Network (2027)</strong> &mdash; Launch in 2&ndash;3 partner churches using Cohort 1 alumni as lead facilitators.</div></div>
+      <div class="vi"><div class="vn">3</div><div class="vb"><strong>City-Wide Program (2027&ndash;2028)</strong> &mdash; Men of Judah becomes a Lansing institution. Community center partnerships.</div></div>
+      <div class="vi"><div class="vn">4</div><div class="vb"><strong>Church Think Tank</strong> &mdash; Alumni advisory body of business owners driving community economic strategy and mentorship pipeline.</div></div>
+      <div class="vi"><div class="vn">5</div><div class="vb"><strong>Community Financial Institution (Long-Term)</strong> &mdash; A church-seeded credit union or CDFI to provide capital within the community. 5&ndash;7 year horizon.</div></div>
+    </div>
+    <div class="fdb">
+      <div class="fdb-text"><strong>Full Organizational Master Plan Available</strong>The complete document includes all curriculum sessions, assessments, accountability systems, media strategy, event calendar, 30-day action plan, and foundational scriptures.</div>
+      <div class="fdb-btns">
+        <a href="Men_of_Judah_Master_Plan.docx" download>Download Full Plan (.docx)</a>
+        <a href="Men_of_Judah_Presentation.pptx" download>Download Slides (.pptx)</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="pf">
+    <div>
+      <div class="pft">PURPOSE &bull; PROFIT &bull; LEGACY</div>
+      <div style="margin-top:5px">&ldquo;Be watchful, stand firm in the faith, act like men, be strong.&rdquo; &mdash; 1 Cor. 16:13</div>
+    </div>
+    <div class="pfm">Men of Judah &bull; Epicenter of Worship<br>Lansing, Michigan &bull; June 2026<br><em>Confidential &mdash; Leadership Overview</em></div>
+  </div>
+</main>
+<script>
+  (function(){
+    var btn = document.getElementById('hamBtn');
+    var nav = document.getElementById('sideNav');
+    var overlay = document.getElementById('navOverlay');
+
+    function openNav(){
+      nav.classList.add('open');
+      overlay.classList.add('open');
+      document.body.classList.add('nav-open');
+      btn.setAttribute('aria-expanded','true');
+    }
+    function closeNav(){
+      nav.classList.remove('open');
+      overlay.classList.remove('open');
+      document.body.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+
+    btn.addEventListener('click', function(){
+      nav.classList.contains('open') ? closeNav() : openNav();
+    });
+    overlay.addEventListener('click', closeNav);
+
+    // Close nav when a link is tapped on mobile
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        if(window.innerWidth <= 680) closeNav();
+      });
+    });
+  })();
+</script>
+</body>
+</html>
